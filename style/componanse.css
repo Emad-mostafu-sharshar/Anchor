@@ -1,0 +1,97 @@
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-grid {
+  display: grid;
+  place-items: center;
+}
+/* main paddin in section */
+.main-padding {
+  padding-bottom: 65.56px;
+}
+/* main paddin in section */
+/* titles in sections */
+.main-title {
+  margin: 22px;
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  font-size: 2.5em;
+}
+@media (max-width: 800px) {
+  .main-title {
+    margin: 22px auto;
+  }
+}
+/* titles in sections */
+/* main animate in body */
+@keyframes show-1 {
+  from {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+@keyframes show-2 {
+  from {
+    opacity: 0;
+    transform: translateX(-100%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes show-3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* main animate in body */
+/* footer */
+.footer {
+  animation: show-2 2s ease-in-out 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-image: var(--bg-character);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  & div {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    & a {
+      color: white;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+/* footer */
+/* responsive footer */
+@media (max-width: 576px) {
+  .footer > div {
+    font-size: .9em;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 993px) {
+  .footer {
+    height: 50px;
+  }
+}
+/* responsive footer */

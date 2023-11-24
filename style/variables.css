@@ -1,0 +1,11 @@
+:root{
+  --main-radius: 10%;
+  --main-transition: .3s;
+  --nav-color: #03223f;
+  --hover-nav-color: white;
+  --bg-character:  linear-gradient(-320deg, rgb(239 206 88), #f76c64);
+  --bg-character-2:#03223f;
+  --box-bg: rgb(245 245 245);
+  --main-h-img: url(/images/home/main-landing.jpg);
+  --main-color: rgb(255, 174, 0);
+}
